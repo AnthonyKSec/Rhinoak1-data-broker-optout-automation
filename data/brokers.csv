@@ -1,0 +1,21 @@
+broker_name,optout_url,status
+Whitepages,https://www.whitepages.com/suppression-requests,pending
+Spokeo,https://www.spokeo.com/optout,pending
+BeenVerified,https://www.beenverified.com/f/optout/search,pending
+Intelius,https://www.intelius.com/opt-out,pending
+TruthFinder,https://www.truthfinder.com/opt-out,pending
+PeopleFinders,https://www.peoplefinders.com/manage,pending
+MyLife,https://www.mylife.com/ccpa,pending
+PeekYou,https://www.peekyou.com/about/contact/optout/index.php,pending
+FastPeopleSearch,https://www.fastpeoplesearch.com/removal,pending
+PeopleLooker,https://www.peoplelooker.com/optout,pending
+ZabaSearch,https://www.zabasearch.com/removal,pending
+Radaris,https://radaris.com/control/privacy,pending
+USA People Search,https://www.usa-people-search.com/manage,pending
+AnyWho,https://www.anywho.com/whitepages,pending
+TruePeopleSearch,https://www.truepeoplesearch.com/removal,pending
+PrivateEye,https://www.privateeye.com/optout,pending
+Addresses.com,https://www.addresses.com/optout,pending
+PeopleSmart,https://www.peoplesmart.com/optout,pending
+Acxiom,https://isapps.acxiom.com/optout/optout.aspx,pending
+Epsilon,https://www.epsilon.com/consumer-privacy,pending
