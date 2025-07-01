@@ -35,4 +35,11 @@ def run_beenverified_optout(full_name, email):
         driver.quit()
 
 if __name__ == "__main__":
-    run_beenverified_optout(full_name="John Doe", email="johndoe@example.com")
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Run opt-out for Beenverified")
+    parser.add_argument("--name", required=True, help="Your full name")
+    parser.add_argument("--email", required=True, help="Your email")
+    args = parser.parse_args()
+
+    run_beenverified_optout(full_name=args.name, email=args.email)

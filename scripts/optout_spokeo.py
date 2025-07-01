@@ -1,7 +1,7 @@
 """
-optout_whitepages_gdpr.py
+optout_spokeo.py
 
-Automates the opt-out process for Whitepages using Selenium.
+Automates the opt-out process for Spokeo using Selenium.
 
 Legal Notice:
 This script is intended to help individuals exercise their privacy rights under:
@@ -18,14 +18,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
 
-def run_whitepages_optout(full_name, email):
+def run_spokeo_optout(full_name, email):
     options = Options()
     options.add_argument("--headless")
     driver = webdriver.Chrome(options=options)
 
     try:
-        print("[*] Opening Whitepages opt-out page...")
-        driver.get("https://www.whitepages.com/suppression-requests")
+        print("[*] Opening Spokeo opt-out page...")
+        driver.get("https://www.spokeo.com/optout")
         time.sleep(5)
 
         print("[*] Manual steps likely required for CAPTCHA or multi-step forms.")
@@ -37,9 +37,9 @@ def run_whitepages_optout(full_name, email):
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Run opt-out for Whitepages")
+    parser = argparse.ArgumentParser(description="Run opt-out for Spokeo")
     parser.add_argument("--name", required=True, help="Your full name")
     parser.add_argument("--email", required=True, help="Your email")
     args = parser.parse_args()
 
-    run_whitepages_optout(full_name=args.name, email=args.email)
+    run_spokeo_optout(full_name=args.name, email=args.email)
